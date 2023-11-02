@@ -12,6 +12,18 @@ h1 {
     font-family: 'Oswald', sans-serif;
 }
 
+/* navbar_changes */
+
 .navbar-toggler {
-    border: 1px solid white;
+    border: none;
 }
+
+.navbar-toggler:focus {
+    text-decoration: none;
+    outline: none;
+    box-shadow: none;
+}
+
+/* .navbar-toggler {
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out;
+} */
