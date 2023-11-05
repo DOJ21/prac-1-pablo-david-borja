@@ -21,3 +21,8 @@ h1 {
 /* .navbar-toggler {
     transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out;
 } */
+
+.size-image-c{
+    height: 100vh;
+    object-fit: cover;
+}
