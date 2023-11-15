@@ -1,16 +1,13 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
 body {
     font-family: 'Inter', sans-serif;
 }
 
 h1 {
-    font-family: 'Oswald', sans-serif;
+    font-family: 'Inter', sans-serif;
 }
+
+
+/* DAVID */
 
 /* navbar_changes */
 
@@ -27,3 +24,17 @@ h1 {
 /* .navbar-toggler {
     transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out;
 } */
+
+.size-image-c{
+    height: 100vh;
+    object-fit: cover;
+}
+
+a:hover {
+    filter: blur(1px);
+    transition: 1s;
+}
+
+.sombra {
+    text-shadow: 2px 2px 8px #2d2d2d;
+}
