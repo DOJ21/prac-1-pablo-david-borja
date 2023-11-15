@@ -6,6 +6,9 @@ h1 {
     font-family: 'Inter', sans-serif;
 }
 
+
+/* DAVID */
+
 /* navbar_changes */
 
 .navbar-toggler {
@@ -25,4 +28,13 @@ h1 {
 .size-image-c{
     height: 100vh;
     object-fit: cover;
+}
+
+a:hover {
+    filter: blur(1px);
+    transition: 1s;
+}
+
+.sombra {
+    text-shadow: 2px 2px 8px #2d2d2d;
 }
