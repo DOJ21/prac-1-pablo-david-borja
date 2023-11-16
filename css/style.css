@@ -83,14 +83,14 @@ a:hover {
 }
 
 .footer-10 {
-    background: #222222;
+    background: #212529;
 }
 
 .btn-primary {
     --bs-btn-color: #fff;
     --bs-btn-bg: #932228;
     --bs-btn-border-color: #932228;
-    --bs-btn-hover-color: #932228;
+    --bs-btn-hover-color: #000;
     --bs-btn-hover-bg: #fff;
     --bs-btn-hover-border-color: #fff;
 }
@@ -103,7 +103,7 @@ a:hover {
 /* DESCRIPTION */
 
 .accordion-button:focus {
-    z-index: 3;
+    z-index: 0;
     border-color: black;
     outline: 0;
     box-shadow: black;
@@ -111,7 +111,7 @@ a:hover {
 
 .accordion-button:not(.collapsed) {
     
-    background-color: black;
+    background-color: #212529;
     box-shadow: inset 0 calc(-1 * var(--bs-accordion-border-width)) 0 var(--bs-accordion-border-color);
     color: white;
 }
@@ -143,8 +143,8 @@ a:hover {
 
  .shadow-sm-lightin {
     box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.3), 0 2px 15px rgba(255, 255, 255, 0.3);
-    
  }
+
  .border-05 {
     border-width: 0.5px;
  }
@@ -161,6 +161,10 @@ a:hover {
     border: 2px solid #932228;
  }
 
+ .btn-hover:hover {
+    box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.4), 0 2px 15px rgba(255, 255, 255, 0.4);
+ }
+
 /* ACORDEON */
  /* .accordion-button:not(.collapsed)::after {
     color: white;
@@ -174,4 +178,18 @@ a:hover {
 
  .accordion-button:not(.collapsed)::after {
     background-image: url(../img/flechaabajo.svg);
+}
+
+.rate {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 1rem;
+}
+
+.rate > div > h2 {
+    padding-bottom: 0.5em;
+}
+
+.svg-col {
+    color: #932228;
 }
