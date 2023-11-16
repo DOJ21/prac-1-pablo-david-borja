@@ -6,7 +6,19 @@ h1 {
     font-family: 'Inter', sans-serif;
 }
 
+
+:root {
+    --white: rgb(255, 255, 255);
+    --pane-padding: 5px 42px;
+  }
+
+/* DAVID */
+
 /* navbar_changes */
+
+.nikelao{
+    width: 100px;
+}
 
 .navbar-toggler {
     border: none;
@@ -18,6 +30,77 @@ h1 {
     box-shadow: none;
 }
 
-/* .navbar-toggler {
-    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out;
-} */
+/* carrusel */
+
+.size-image-c{
+    height: 100vh;
+    object-fit: cover;
+}
+
+a:hover {
+    filter: blur(1px);
+    transition: 1s;
+}
+
+.sombra {
+    text-shadow: 2px 2px 8px #2d2d2d8d;
+}
+
+.footer-10 {
+    background: #222222;
+}
+
+.btn-primary {
+    --bs-btn-color: #fff;
+    --bs-btn-bg: #dc3545;
+    --bs-btn-border-color: #dc3545;
+    --bs-btn-hover-color: #fff;
+    --bs-btn-hover-bg: #d70b0b;
+    --bs-btn-hover-border-color: #d70b0b;
+}
+
+
+
+/* BORJA */
+
+/* GALLERY */
+
+.item1 {
+    height: auto;
+    width: 100vw;
+    
+} 
+
+
+/* DESCRIPTION */
+
+.accordion-button:focus {
+    z-index: 3;
+    border-color: black;
+    outline: 0;
+    box-shadow: black;
+}
+
+.accordion-button:not(.collapsed) {
+    
+    background-color: black;
+    box-shadow: inset 0 calc(-1 * var(--bs-accordion-border-width)) 0 var(--bs-accordion-border-color);
+    color: white;
+}
+
+.accordion {
+    --bs-accordion-active-color: var(--white);
+    --bs-accordion-active-bg: var(--white);
+    --bs-accordion-btn-focus-box-shadow: 0 0 0 0.25rem rgb(255 255 255 / 25%);
+
+}
+
+/* REVIEW */
+
+.valoracion {
+    align-items: center;
+    text-align: center;
+}
+
+/* PABLO */
+
