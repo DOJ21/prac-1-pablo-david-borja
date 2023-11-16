@@ -106,7 +106,6 @@ a:hover {
     z-index: 0;
     border-color: black;
     outline: 0;
-    box-shadow: black;
 }
 
 .accordion-button:not(.collapsed) {
