@@ -5,6 +5,7 @@
 :root {
     --white: rgb(255, 255, 255);
     --pane-padding: 5px 42px;
+    
   }
 
 /* DAVID */
@@ -47,11 +48,11 @@ a:hover {
 
 .btn-primary {
     --bs-btn-color: #fff;
-    --bs-btn-bg: #dc3545;
-    --bs-btn-border-color: #dc3545;
-    --bs-btn-hover-color: #fff;
-    --bs-btn-hover-bg: #d70b0b;
-    --bs-btn-hover-border-color: #d70b0b;
+    --bs-btn-bg: #932228;
+    --bs-btn-border-color: #932228;
+    --bs-btn-hover-color: #932228;
+    --bs-btn-hover-bg: #fff;
+    --bs-btn-hover-border-color: #fff;
 }
 
 
@@ -103,6 +104,36 @@ a:hover {
     padding-top: 70px !important;
 }
 
-.text-darkgrey {
-    color: grey;
-}
+#card-gradient {
+    background-image: 
+     linear-gradient(black, black), 
+     linear-gradient(calc(var(--rotation)), #888 0, #444 20%, transparent 80%);
+   background-origin: border-box;
+   background-clip: padding-box, border-box;
+   position: relative;
+ }
+
+ .shadow-sm-light {
+    box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.3), 0 2px 15px rgba(255, 255, 255, 0.3);
+    
+ }
+
+ .shadow-sm-lightin {
+    box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.3), 0 2px 15px rgba(255, 255, 255, 0.3);
+    
+ }
+ .border-05 {
+    border-width: 0.5px;
+ }
+
+ .link-redmain {
+    color: #932228;
+ }
+
+ .bg-redmain {
+    background-color: #932228;
+ }
+
+ .border-redmain {
+    border: 2px solid #932228;
+ }
