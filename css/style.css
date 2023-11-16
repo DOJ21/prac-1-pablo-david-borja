@@ -1,11 +1,6 @@
-body {
-    font-family: 'Inter', sans-serif;
+*{
+    font-family: "Inter", sans-serif;
 }
-
-h1 {
-    font-family: 'Inter', sans-serif;
-}
-
 
 :root {
     --white: rgb(255, 255, 255);
@@ -43,7 +38,7 @@ a:hover {
 }
 
 .sombra {
-    text-shadow: 2px 2px 8px #2d2d2d8d;
+    text-shadow: 2px 2px 8px #2d2d2d27;
 }
 
 .footer-10 {
@@ -104,3 +99,10 @@ a:hover {
 
 /* PABLO */
 
+.py-6 {
+    padding-top: 70px !important;
+}
+
+.text-darkgrey {
+    color: grey;
+}
