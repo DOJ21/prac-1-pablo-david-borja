@@ -38,3 +38,33 @@ a:hover {
 .sombra {
     text-shadow: 2px 2px 8px #2d2d2d;
 }
+
+
+/* BORJA */
+
+
+  #contenedor {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+  }
+
+  #imagen {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1; /* Coloca la imagen detrás del contenido */
+  }
+
+  .contenedor-imagenes {
+    display: flex;
+  }
+
+  .imagen-reducida {
+    width: 720px; /* Ajusta el tamaño según tus preferencias */
+    height: auto; /* Mantiene la proporción de la imagen */
+    margin-right: 0px; /* Espacio entre las imágenes, ajusta según tus preferencias */
+  }
+
