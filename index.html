@@ -11,17 +11,19 @@
   <link rel="stylesheet" href="css/style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
 </head>
 <body>
   <header>
 
+    
+
     <!-- Nav -->
 
-    <nav class="navbar z-3 sticky-top navbar-expand-lg bg-dark" data-bs-theme="dark">
+    <nav class="navbar z-3 fixed-top navbar-expand-lg bg-transparent" data-bs-theme="dark">
         <div class="container py-0">
-          <a class="navbar-brand" href="index.html">Nikelao</a>
+          <a class="navbar-brand" href="index.html"><img class="nikelao" src="img/nikelao_logo.svg" alt=""></a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
@@ -43,39 +45,87 @@
 
     <!-- Carrusel -->
 
-    <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+    <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
       <div class="carousel-inner">
         <div class="carousel-item active">
           <img src="img/spidey4.jpg" class="d-block w-100 size-image-c" alt="...">
         </div>
         <div class="carousel-item">
-          <img src="img/spidey2.jpg" class="d-block w-100 size-image-c" alt="...">
-        </div>
-        <div class="carousel-item">
           <img src="img/spidey3.jpg" class="d-block w-100 size-image-c" alt="...">
         </div>
+        <div class="carousel-item">
+          <img src="img/spidey1.jpg" class="d-block w-100 size-image-c" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="img/spidey2.jpg" class="d-block w-100 size-image-c" alt="...">
+        </div>
       </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
     </div>
   </header>
   <main>
-    <div class="position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center bg-danger">
+    <div class="position-relative overflow-hidden text-center bg-light">
       <div class="col-md-6 p-lg-5 mx-auto my-5">
-        <h1 class="display-3 fw-bold text-white sombra">Un diseño mensual</h1>
-        <h3 class="fw-normal mb-3 text-white sombra">Empieza ahora</h3>
+        <h1 class="display-3 fw-bold text-dark">NIKELAO <small>x</small> SPIDEY</h1>
+        <p class="fs-5 text-dark">Sumérgete en el estilo urbano con las zapatillas personalizadas de Nike inspiradas en Spiderman. El diseño fusiona el logo vibrante del superhéroe con la estética de Nike, mientras que la suela texturizada evoca la fuerza arácnida.
+          <br><br>"Un gran poder, conlleva una gran responsabilidad".</p>
+        
         <div class="d-flex gap-3 justify-content-center lead fw-normal">
-          <a class="icon-link text-decoration-none text-white" href="#">
-            Edición 01
+          <a class="icon-link text-dark link-dark" href="product.html">
+            Más información
           </a>
-          <a class="icon-link text-decoration-none text-white" href="#">
-            Elige tu plan
+          <a class="icon-link icon-link-hover text-danger link-danger" href="contact.html">
+            Planes
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
+              <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/>
+            </svg>
           </a>
         </div>
       </div>
     </div>
   </main>
-  <footer>
 
+
+  <footer class="footer-10">
+    <div class="py-5 container">
+      <div class="row">
+        <div class="col-6 col-md-2 mb-3">
+          <a class="navbar-brand" href="index.html"><img class="nikelao" src="img/nikelao_logo.svg" alt=""></a>
+          <ul class="nav flex-column">
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white">Home</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white">Edición 01</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white">Planes</a></li>
+          </ul>
+        </div>
+
+        <div class="col-md-5 offset-md-1 mb-3">
+          <form name="form1" action="#">
+            <h5 class="text-white fw-normal">Suscríbete para estar informado</h5>
+            <p class="text-white fw-light">Recuerda cada mes, habrá un diseño nuevo</p>
+            <div class="d-flex flex-column flex-sm-row w-100 gap-2">
+              <label for="newsletter1" class="visually-hidden">Dirección email</label>
+              <input id="newsletter1" type="text" name='text1' class="form-control" placeholder="Dirección email">
+              <button class="btn btn-primary" type="button" onclick="ValidateEmail(document.form1.text1)">Suscribirse</button>
+            </div>
+          </form>
+        </div>
+      </div>
+
+      <div class="d-flex flex-sm-row justify-content-between py-4 border-top text-white">
+        <p><small>© 2023 Nikelao, Inc. All rights reserved. © 2023 Marvel.</small></p>
+      </div>
+
+    </div>
   </footer>
+
   <script src="js/bootstrap.min.js"></script>
+  <script src="js/script.js"></script>
 </body>
 </html>
